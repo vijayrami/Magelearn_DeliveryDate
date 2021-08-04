@@ -1,6 +1,6 @@
 # Magelearn_DeliveryDate
 
-##Referances
+## Referances
 
 https://github.com/sohelrana09/magento2-module-delivery-date
 
