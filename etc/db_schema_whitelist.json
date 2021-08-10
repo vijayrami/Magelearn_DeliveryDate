@@ -1,0 +1,19 @@
+{
+    "sales_order": {
+        "column": {
+            "delivery_date": true,
+            "delivery_comment": true
+        }
+    },
+    "quote": {
+        "column": {
+            "delivery_date": true,
+            "delivery_comment": true
+        }
+    },
+    "sales_order_grid": {
+        "column": {
+            "delivery_date": true
+        }
+    }
+}

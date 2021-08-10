@@ -1,0 +1,22 @@
+{
+    "name": "magelearn/module-delivery-date",
+    "description": "Order Delivery date extension will allow customer to choose preferable delivery date for order.",
+    "type": "magento2-module",
+    "require": {},
+    "authors": [
+        {
+            "name": "vijay rami",
+            "email": "vijaymrami@gmail.com"
+        }
+    ],
+    "license": "proprietary",
+    "minimum-stability": "dev",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Magelearn\\DeliveryDate\\": ""
+        }
+    }
+}

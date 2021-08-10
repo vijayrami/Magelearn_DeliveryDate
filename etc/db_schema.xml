@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="sales_order" resource="sales" engine="innodb" comment="Sales Order Delivery Date Comment Attribute">
+        <column xsi:type="datetime" name="delivery_date" nullable="false"  comment="Delivery Date"/>
+        <column xsi:type="text" name="delivery_comment" nullable="false"  comment="Delivery Comment"/>
+    </table>
+    <table name="quote" resource="checkout" engine="innodb" comment="Quote Delivery Date Comment Attribute">
+        <column xsi:type="datetime" name="delivery_date" nullable="false"  comment="Delivery Date"/>
+        <column xsi:type="text" name="delivery_comment" nullable="false"  comment="Delivery Comment"/>
+    </table>
+    <table name="sales_order_grid" resource="sales" engine="innodb" comment="Sales Order Grid Delivery Date Attribute">
+        <column xsi:type="datetime" name="delivery_date" nullable="false"  comment="Delivery Date"/>
+    </table>
+    <table name="quote_address" resource="checkout" engine="innodb" comment="Quote Address Delivery Date Attribute">
+        <column xsi:type="datetime" name="delivery_date" nullable="false"  comment="Delivery Date"/>
+    </table>
+    <table name="sales_order_address" resource="checkout" engine="innodb" comment="Sales Order Address Delivery Date Attribute">
+        <column xsi:type="datetime" name="delivery_date" nullable="false"  comment="Delivery Date"/>
+    </table>
+</schema>

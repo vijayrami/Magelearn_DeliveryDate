@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <magelearn_deliverydate>
+        	<holidays>
+                <blackout_dates></blackout_dates>
+            </holidays>
+            <general>
+                <format>yy-mm-dd</format>
+                <disabled>-1</disabled>
+                <hourMin>8</hourMin>
+                <hourMax>22</hourMax>
+                <required_delivery_date>0</required_delivery_date>
+            </general>
+        </magelearn_deliverydate>
+    </default>
+</config>
