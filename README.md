@@ -1,5 +1,7 @@
 # Magelearn_DeliveryDate
 
+[![Configuration-Settings-Stores-Magento-Admin.png](https://i.postimg.cc/1tWch7c4/Configuration-Settings-Stores-Magento-Admin.png)](https://postimg.cc/LY1ZjTWM)
+
 ## Referances
 
 https://github.com/sohelrana09/magento2-module-delivery-date
