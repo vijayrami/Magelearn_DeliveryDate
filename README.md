@@ -12,6 +12,14 @@ It allows to disable the days (like all saturday & sundays) in a month. You can 
 
 ##### *order delivery date* in multiple shipping address form Magento2.
 
+##### Admin system configuration to choose the weeek off days and Blackout dates.
+
+##### Will display different colors on checkout page for weeek off days and Blackout dates.
+
+##### Will display Blackout dates message as a tooltip on calender days which was added from admin system configuration.
+
+##### .less CSS file generation
+
 
 [![Configuration-Settings-Stores-Magento-Admin.png](https://i.postimg.cc/1tWch7c4/Configuration-Settings-Stores-Magento-Admin.png)](https://postimg.cc/LY1ZjTWM)
 
