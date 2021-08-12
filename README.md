@@ -20,6 +20,7 @@ It allows to disable the days (like all saturday & sundays) in a month. You can 
 
 ##### .less CSS file generation
 
+# Screen Shots
 
 [![Configuration-Settings-Stores-Magento-Admin.png](https://i.postimg.cc/1tWch7c4/Configuration-Settings-Stores-Magento-Admin.png)](https://postimg.cc/LY1ZjTWM)
 
