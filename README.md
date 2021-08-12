@@ -3,6 +3,9 @@ Add *order delivery date* with Datetime picker and order comment in checkout pag
 
 This order delivery datetimepicker will also display in multiple shipping address form.
 
+It allows to disable the days (like all saturday & sundays) in a month. You can also add your Blackout dates (like national holidays or any other reason on which day you will not deliver the order). It will display message (which will be added from admin system configuration) on dates as a tooltip.
+
+
 ## Features
 
 [![Configuration-Settings-Stores-Magento-Admin.png](https://i.postimg.cc/1tWch7c4/Configuration-Settings-Stores-Magento-Admin.png)](https://postimg.cc/LY1ZjTWM)
