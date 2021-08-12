@@ -8,6 +8,9 @@ It allows to disable the days (like all saturday & sundays) in a month. You can 
 
 ## Features
 
+### *order delivery date* with Datetime picker and order comment in checkout page Magento2.
+
+
 [![Configuration-Settings-Stores-Magento-Admin.png](https://i.postimg.cc/1tWch7c4/Configuration-Settings-Stores-Magento-Admin.png)](https://postimg.cc/LY1ZjTWM)
 
 [![Checkout.png](https://i.postimg.cc/Gt9XtTcL/Checkout.png)](https://postimg.cc/y34mrdgt)
