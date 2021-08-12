@@ -1,5 +1,6 @@
 # Magelearn_DeliveryDate
-Add order delivery date with Datetime picker and order comment in checkout page Magento2. This order delivery datetimepicker will also display in multiple shipping address form.
+Add order delivery date with Datetime picker and order comment in checkout page Magento2.
+This order delivery datetimepicker will also display in multiple shipping address form.
 
 ## Features
 
