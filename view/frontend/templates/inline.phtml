@@ -1,4 +1,7 @@
 <div id="delivery-date-<?= (int) $block->getEntity()->getId() ?>" data-bind="scope: 'delivery-date-<?= (int) $block->getEntity()->getId() ?>'">
+	<label class="label" data-bind="attr: { for: $t('Delivery Date') }">
+        <span data-bind="i18n: 'Delivery Date'"></span>
+    </label>
     <!-- ko template: getTemplate() --><!-- /ko -->
 
     <script>
