@@ -37,6 +37,8 @@ It allows to disable the days (like all saturday & sundays) in a month. You can 
 
 [![Screenshot-from-2021-08-11-16-07-10.png](https://i.postimg.cc/B6zxhY03/Screenshot-from-2021-08-11-16-07-10.png)](https://postimg.cc/jwzw2h23)
 
+[![Shipping-Methods.png](https://i.postimg.cc/bJ4F1jB4/Shipping-Methods.png)](https://postimg.cc/WF6nPxj7)
+
 ## Referances
 
 https://github.com/sohelrana09/magento2-module-delivery-date
