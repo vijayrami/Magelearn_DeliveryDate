@@ -26,7 +26,7 @@ It allows to disable the days (like all saturday & sundays) in a month. You can 
 
 #### 8. On sales order create page display disabled dates for holiday and black out dates with different colours.
 
-#### 8. Display *order delivery date* on sales order grid at admin.
+#### 9. Display *order delivery date* on sales order grid at admin.
 
 
 # Screen Shots
