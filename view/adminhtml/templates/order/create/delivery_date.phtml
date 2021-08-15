@@ -1,9 +1,12 @@
 <?php /** @var \Magelearn\DeliveryDate\Block\Adminhtml\DeliveryDate $block */ ?>
-<div class="admin__field">
+<div class="admin__field field-delivery_date">
     <label for="delivery_date" class="admin__field-label"><span><?= __('Delivery Date') ?></span></label>
     <div class="admin__field-control">
-        <input class="admin__control-text <?php if ($block->getRequiredDeliveryDate()): ?> required-entry <?php endif ?>"
-               type="text" name="delivery_date" id="delivery_date" readonly="true"/>
+        <input
+                id="delivery_date"
+                name="delivery_date"
+                readonly="true"
+                class="admin__control-input <?php echo ($block->getRequiredDeliveryDate()) ? 'required-entry' : ''; ?>" >
     </div>
 </div>
 <div class="admin__field field-comment">
@@ -23,6 +26,7 @@
         $(document).ready(function () {
             var config = <?= $block->getConfig() ?>;
             var disabled = config.shipping.delivery_date.disabled;
+            var blackout = config.shipping.delivery_date.blackout;
             var noday = config.shipping.delivery_date.noday;
             var hourMin = parseInt(config.shipping.delivery_date.hourMin);
             var hourMax = parseInt(config.shipping.delivery_date.hourMax);
@@ -34,29 +38,43 @@
                 return parseInt(item, 10);
             });
 
-            if(noday) {
-                var options = {
-                    minDate: 0,
-                    dateFormat:format,
-                    hourMin: hourMin,
-                    hourMax: hourMax
-                };
-            } else {
-                var options = {
-                    minDate: 0,
-                    dateFormat:format,
-                    hourMin: hourMin,
-                    hourMax: hourMax,
-                    beforeShowDay: function(date) {
-                        var day = date.getDay();
-                        if(disabledDay.indexOf(day) > -1) {
-                            return [false];
+            var options = {
+                minDate: 0,
+                dateFormat:format,
+                hourMin: hourMin,
+                hourMax: hourMax,
+                beforeShowDay: function(date) {
+                	if(blackout || noday){
+                    	var string = $.datepicker.formatDate('yy-mm-dd', date);
+                    	var day = date.getDay();
+                        var date_obj = [];
+                        function arraySearch(arr,val) {
+                            for (var i=0; i<arr.length; i++)
+                                if (arr[i].date === val)                    
+                                    return arr[i].content;
+                            return false;
+                        }
+                        function arrayTooltipClass(arr,val) {
+                            for (var i=0; i<arr.length; i++)
+                                if (arr[i].date === val)                    
+                                    return 'redblackday';
+                            return 'redday';
+                        }
+						for(var i = 0; i < blackout.length; i++) {
+						   var tooltipDate = blackout[i].content;
+						   if(blackout[i].date === string) {
+                             date_obj.push(blackout[i].date);
+						   }
+						}
+                        if(date_obj.indexOf(string) != -1 || disabledDay.indexOf(day) > -1) {
+                            return [false, arrayTooltipClass(blackout,string), arraySearch(blackout,string)];
                         } else {
                             return [true];
                         }
-                    }
-                };
-            }
+
+					}    					
+                }
+            };
             $('#delivery_date').datetimepicker(options);
         });
     });
