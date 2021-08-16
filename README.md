@@ -9,10 +9,10 @@ It allows to disable the days (like all saturday & sundays) in a month. You can 
 ## Features
 
 #### 1. *order delivery date* with Datetime picker and order comment in checkout page Magento2.
-        Datetime picker will display holiday and blackout dates in red and block color accordingly.
+        Datetime picker will display holiday and blackout dates in red and block color accordingly (Tooltip on blackout dates).
 
 #### 2. *order delivery date* in multiple shipping address form Magento2.
-       Datetime picker will display only holiday dates disabled. 
+       Datetime picker will display holiday and blackout dates in red and block color accordingly (Tooltip on blackout dates).
 
 #### 3. Admin system configuration to choose the weeek off days and Blackout dates.
 
