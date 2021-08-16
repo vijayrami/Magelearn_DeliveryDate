@@ -46,11 +46,30 @@ define([
                         	if(blackout || noday){
 	                        	var string = $.datepicker.formatDate('yy-mm-dd', date);
 	                        	var day = date.getDay();
-	    						if(blackout.indexOf(string) != -1 || disabledDay.indexOf(day) > -1) {
-	    							return [false];
-	    						} else {
-	    							return [true];
-	    						}
+	                        	var date_obj = [];
+                                function arraySearch(arr,val) {
+                                    for (var i=0; i<arr.length; i++)
+                                        if (arr[i].date === val)                    
+                                            return arr[i].content;
+                                    return false;
+                                }
+                                function arrayTooltipClass(arr,val) {
+                                    for (var i=0; i<arr.length; i++)
+                                        if (arr[i].date === val)                    
+                                            return 'redblackday';
+                                    return 'redday';
+                                }
+                                for(var i = 0; i < blackout.length; i++) {
+	    						   var tooltipDate = blackout[i].content;
+								   if(blackout[i].date === string) {
+                                     date_obj.push(blackout[i].date);
+								   }
+								}
+	    						if(date_obj.indexOf(string) != -1 || disabledDay.indexOf(day) > -1) {
+                                    return [false, arrayTooltipClass(blackout,string), arraySearch(blackout,string)];
+                                } else {
+                                    return [true];
+                                }
     						}    					
                         }
                     };
@@ -73,7 +92,7 @@ define([
                             return;
                         }
                     }
-                    writable($(element).datepicker("getDate"));
+                    writable($(element).datetimepicker("getDate"));
                 },
                 update: function (element, valueAccessor) {
                     var widget = $(element).data("DatePicker");
