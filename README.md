@@ -39,7 +39,7 @@ It allows to disable the days (like all saturday & sundays) in a month. You can 
 
 [![Screenshot-from-2021-08-11-16-07-10.png](https://i.postimg.cc/B6zxhY03/Screenshot-from-2021-08-11-16-07-10.png)](https://postimg.cc/jwzw2h23)
 
-[![Shipping-Methods.png](https://i.postimg.cc/bJ4F1jB4/Shipping-Methods.png)](https://postimg.cc/WF6nPxj7)
+[![Screenshot-from-2021-08-17-11-32-09.png](https://i.postimg.cc/rsj3xgzv/Screenshot-from-2021-08-17-11-32-09.png)](https://postimg.cc/WqD5PGGn)
 
 [![Screenshot-46.png](https://i.postimg.cc/tTc8D6YS/Screenshot-46.png)](https://postimg.cc/TLrk3pjg)
 
