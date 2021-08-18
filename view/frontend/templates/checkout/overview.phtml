@@ -101,7 +101,7 @@ $checkoutHelper = $block->getData('checkoutHelper');
                     </strong>
                     <?php if ($_rate = $block->getShippingAddressRate($address)): ?>
                         <div class="box-content">
-                        	Delivery Date: <?= (new DateTime($address->getDeliveryDate()))->format('Y-m-d') ?>
+                        	Delivery Date: <?= (new DateTime($address->getDeliveryDate()))->format('Y-m-d H:i:s') ?>
                             <br/>
                             <?= $block->escapeHtml($_rate->getCarrierTitle()) ?>
                             (<?= $block->escapeHtml($_rate->getMethodTitle()) ?>)
