@@ -33,19 +33,23 @@ It allows to disable the days (like all saturday & sundays) in a month. You can 
 
 # Screen Shots
 
-[![Configuration-Settings-Stores-Magento-Admin.png](https://i.postimg.cc/1tWch7c4/Configuration-Settings-Stores-Magento-Admin.png)](https://postimg.cc/LY1ZjTWM)
-
-[![Checkout.png](https://i.postimg.cc/Gt9XtTcL/Checkout.png)](https://postimg.cc/y34mrdgt)
+![Configuration-Setting](/assets/Configuration-Setting.png)
 
 ### checkout
-[![Screenshot-from-2021-08-11-16-07-10.png](https://i.postimg.cc/B6zxhY03/Screenshot-from-2021-08-11-16-07-10.png)](https://postimg.cc/jwzw2h23)
+
+![image_1](/assets/image_1.png)
+
+![image_2](/assets/image_2.png)
 
 ### multi shipping checkout
-[![Screenshot-from-2021-08-17-11-32-09.png](https://i.postimg.cc/rsj3xgzv/Screenshot-from-2021-08-17-11-32-09.png)](https://postimg.cc/WqD5PGGn)
 
-[![Screenshot-46.png](https://i.postimg.cc/tTc8D6YS/Screenshot-46.png)](https://postimg.cc/TLrk3pjg)
+![image_3](/assets/image_3.png)
 
-[![Orders-Operati.png](https://i.postimg.cc/B6hm4PDT/Orders-Operati.png)](https://postimg.cc/0MwYCQVj)
+### Admin Order
+
+![admin](/assets/admin.png)
+
+![admin_1](/assets/admin_1.png)
 
 ## Referances
 
